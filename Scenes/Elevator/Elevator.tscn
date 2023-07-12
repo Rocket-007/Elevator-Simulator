@@ -1,0 +1,115 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/Elevator/Elevator.gd" type="Script" id=2]
+[ext_resource path="res://fonts/noto_sans_ui_bold.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 20
+font_data = ExtResource( 3 )
+
+[node name="Elevator" type="Node2D" groups=["Elevator"]]
+script = ExtResource( 2 )
+
+[node name="back_wall" type="Polygon2D" parent="."]
+modulate = Color( 1, 1, 1, 0.486275 )
+position = Vector2( -3, -8 )
+color = Color( 0.254902, 0.262745, 0.290196, 1 )
+polygon = PoolVector2Array( 224, 9, 224, 232, 5, 233, 5, 9 )
+
+[node name="right_wall" type="Polygon2D" parent="."]
+position = Vector2( 212, -232 )
+color = Color( 0.12549, 0.160784, 0.203922, 1 )
+polygon = PoolVector2Array( 8, 233, 81, 270, 81, 494, 8, 456 )
+
+[node name="floor" type="Polygon2D" parent="."]
+position = Vector2( -3, -8 )
+color = Color( 0.0627451, 0.0666667, 0.0745098, 1 )
+polygon = PoolVector2Array( 4, 232, 81, 270, 298, 270, 224, 232 )
+
+[node name="left_wall" type="Polygon2D" parent="."]
+modulate = Color( 1, 1, 1, 0.666667 )
+position = Vector2( -4, -232 )
+color = Color( 0.372549, 0.4, 0.403922, 1 )
+polygon = PoolVector2Array( 4, 232, 81, 270, 81, 494, 4, 456 )
+
+[node name="ceiling" type="Polygon2D" parent="."]
+position = Vector2( -3, -232 )
+color = Color( 0.478431, 0.568627, 0.560784, 1 )
+polygon = PoolVector2Array( 4, 232, 81, 270, 298, 270, 224, 232 )
+
+[node name="Current_floor" type="Label" parent="."]
+margin_left = 217.0
+margin_top = 39.0
+margin_right = 445.0
+margin_bottom = 88.0
+custom_fonts/font = SubResource( 1 )
+text = "Current Floor"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="going_up" type="Label" parent="."]
+margin_left = 217.0
+margin_top = 63.0
+margin_right = 445.0
+margin_bottom = 112.0
+custom_fonts/font = SubResource( 1 )
+text = "going_up"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="going_down" type="Label" parent="."]
+margin_left = 217.0
+margin_top = 87.0
+margin_right = 445.0
+margin_bottom = 136.0
+custom_fonts/font = SubResource( 1 )
+text = "going_up"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="stopped" type="Label" parent="."]
+margin_left = 217.0
+margin_top = 111.0
+margin_right = 445.0
+margin_bottom = 160.0
+custom_fonts/font = SubResource( 1 )
+text = "stopped"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="stopped_time_counter" type="Label" parent="."]
+margin_left = 217.0
+margin_top = 135.0
+margin_right = 445.0
+margin_bottom = 184.0
+custom_fonts/font = SubResource( 1 )
+text = "stopped_time_counter"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Number_of_passengers" type="Label" parent="."]
+margin_left = 217.0
+margin_top = 159.0
+margin_right = 445.0
+margin_bottom = 208.0
+custom_fonts/font = SubResource( 1 )
+text = "No of passengers"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Moving_index" type="Label" parent="."]
+margin_left = 217.0
+margin_top = 183.0
+margin_right = 445.0
+margin_bottom = 232.0
+custom_fonts/font = SubResource( 1 )
+text = "Moving_index"
+__meta__ = {
+"_edit_use_anchors_": false
+}

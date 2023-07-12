@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scenes/Floors/Floor.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Elevator/Elevator.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Person/Person.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Building.gd" type="Script" id=4]
+[ext_resource path="res://Scenes/Debug/debug_overlay.tscn" type="PackedScene" id=5]
+
+[node name="Building" type="Node2D"]
+script = ExtResource( 4 )
+floors = 2
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2( 132.351, 0 )
+scale = Vector2( 1.29281, 1 )
+color = Color( 0.356863, 0.592157, 0.152941, 1 )
+polygon = PoolVector2Array( -452, 647, -452, 646, 1385, 666, 1703, 877, -218, 871 )
+
+[node name="Polygon2D2" type="Polygon2D" parent="."]
+position = Vector2( 406.78, 141.081 )
+scale = Vector2( 1.05193, 0.767677 )
+color = Color( 0.247059, 0.45098, 0.0745098, 1 )
+polygon = PoolVector2Array( -383.845, 702.013, 1341.67, 696.368, 1434.71, 765.842, -305.894, 755.421 )
+
+[node name="Floor" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 454 )
+
+[node name="Floor2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 227 )
+
+[node name="Floor3" parent="." instance=ExtResource( 1 )]
+position = Vector2( -2, 0 )
+
+[node name="Elevator" parent="." instance=ExtResource( 2 )]
+position = Vector2( 650, 454 )
+floors = 2
+
+[node name="Person26" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1404, 684 )
+
+[node name="Person27" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1012, 684 )
+
+[node name="debug_overlay_building" parent="." instance=ExtResource( 5 )]
+offset = Vector2( 0, 200 )
+transform = Transform2D( 1, 0, 0, 1, 0, 200 )

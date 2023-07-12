@@ -1,0 +1,188 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/Simulation/Simulation.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/Building.tscn" type="PackedScene" id=3]
+
+[node name="Simulation" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="LineEdit" parent="CanvasLayer"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -151.0
+margin_top = 65.0
+margin_right = -20.0
+margin_bottom = 89.0
+text = "res://Scenes/Building_samples/Building_sample1.tscn"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="CanvasLayer/Label"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 12.0
+margin_bottom = 32.0
+text = "Load"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="CanvasLayer/Label"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 36.0
+margin_bottom = 56.0
+text = "Open"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="LineEdit" parent="CanvasLayer"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -151.0
+margin_top = 169.0
+margin_right = -20.0
+margin_bottom = 193.0
+text = "res://Scenes/Building_samples/Building_sample2.tscn"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="CanvasLayer/Label2"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 12.0
+margin_bottom = 32.0
+text = "Load"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="CanvasLayer/Label2"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 36.0
+margin_bottom = 56.0
+text = "Open"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="LineEdit" parent="CanvasLayer"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -151.0
+margin_top = 273.0
+margin_right = -20.0
+margin_bottom = 297.0
+text = "res://Scenes/Building_samples/Building_sample3.tscn"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="CanvasLayer/Label3"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 12.0
+margin_bottom = 32.0
+text = "Load"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="CanvasLayer/Label3"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 36.0
+margin_bottom = 56.0
+text = "Open"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="LineEdit" parent="CanvasLayer"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -151.0
+margin_top = 377.0
+margin_right = -20.0
+margin_bottom = 401.0
+text = "res://Scenes/Building_samples/Building_sample4.tscn"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="CanvasLayer/Label4"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 12.0
+margin_bottom = 32.0
+text = "Load"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="CanvasLayer/Label4"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 36.0
+margin_bottom = 56.0
+text = "Open"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FileDialog" type="FileDialog" parent="CanvasLayer"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -315.0
+margin_top = -17.0
+margin_bottom = 259.0
+window_title = "Open a File"
+dialog_text = "Select a Building Sample"
+mode = 0
+current_dir = "res://Scenes/Building_samples"
+current_file = "Building_sample1.tscn"
+current_path = "res://Scenes/Building_samples/Building_sample1.tscn"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 752, 360 )
+current = true
+zoom = Vector2( 1.2, 1.2 )
+
+[node name="runnig_sim" type="Node2D" parent="."]
+pause_mode = 1
+
+[node name="Building" parent="runnig_sim" instance=ExtResource( 3 )]
+
+[connection signal="pressed" from="CanvasLayer/Label/Button" to="." method="_on_Button_pressed" binds= [ 1 ]]
+[connection signal="pressed" from="CanvasLayer/Label/Button2" to="." method="_on_Button2_pressed" binds= [ 1 ]]
+[connection signal="pressed" from="CanvasLayer/Label2/Button" to="." method="_on_Button_pressed" binds= [ 2 ]]
+[connection signal="pressed" from="CanvasLayer/Label2/Button2" to="." method="_on_Button2_pressed" binds= [ 2 ]]
+[connection signal="pressed" from="CanvasLayer/Label3/Button" to="." method="_on_Button_pressed" binds= [ 3 ]]
+[connection signal="pressed" from="CanvasLayer/Label3/Button2" to="." method="_on_Button2_pressed" binds= [ 3 ]]
+[connection signal="pressed" from="CanvasLayer/Label4/Button" to="." method="_on_Button_pressed" binds= [ 4 ]]
+[connection signal="pressed" from="CanvasLayer/Label4/Button2" to="." method="_on_Button2_pressed" binds= [ 4 ]]

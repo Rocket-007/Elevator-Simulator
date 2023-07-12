@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/Room/Room.tscn" type="PackedScene" id=1]
+
+[node name="Floor2" type="Node2D"]
+
+[node name="Room" parent="." instance=ExtResource( 1 )]
+position = Vector2( 650, 3 )
+left_wall = false
+
+[node name="Room2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 434, 3 )
+left_wall = false
+right_wall = false
+
+[node name="Room3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 218, 3 )
+left_wall = false
+right_wall = false
+
+[node name="Room4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 2, 3 )
+right_wall = false

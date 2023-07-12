@@ -1,0 +1,115 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scenes/Debug/debug_overlay.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Elevator/Elevator.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Person/Person.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Floors/Floor.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Building.gd" type="Script" id=5]
+
+[node name="Building_sample1" type="Node2D"]
+script = ExtResource( 5 )
+floors = 3
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2( 132.351, 227 )
+scale = Vector2( 1.29281, 1 )
+color = Color( 0.356863, 0.592157, 0.152941, 1 )
+polygon = PoolVector2Array( -452, 647, -452, 646, 1385, 666, 1703, 877, -218, 871 )
+
+[node name="Polygon2D2" type="Polygon2D" parent="."]
+position = Vector2( 406.78, 368.081 )
+scale = Vector2( 1.05193, 0.767677 )
+color = Color( 0.247059, 0.45098, 0.0745098, 1 )
+polygon = PoolVector2Array( -383.845, 702.013, 1341.67, 696.368, 1434.71, 765.842, -305.894, 755.421 )
+
+[node name="Floor" parent="." instance=ExtResource( 4 )]
+position = Vector2( 0, 681 )
+
+[node name="Floor2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 0, 454 )
+
+[node name="Floor3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 0, 227 )
+
+[node name="Floor4" parent="." instance=ExtResource( 4 )]
+
+[node name="Elevator" parent="." instance=ExtResource( 2 )]
+position = Vector2( 650, 681 )
+floors = 2
+
+[node name="Person" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1214, 919 )
+
+[node name="Person6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 318, 925 )
+
+[node name="Person26" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1348, 908 )
+
+[node name="Person30" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1316, 908 )
+
+[node name="Person33" parent="." instance=ExtResource( 3 )]
+position = Vector2( 174, 916 )
+
+[node name="Person34" parent="." instance=ExtResource( 3 )]
+position = Vector2( 206, 916 )
+
+[node name="Person41" parent="." instance=ExtResource( 3 )]
+position = Vector2( 428, 921 )
+
+[node name="Person42" parent="." instance=ExtResource( 3 )]
+position = Vector2( 468, 921 )
+
+[node name="Person43" parent="." instance=ExtResource( 3 )]
+position = Vector2( 500, 921 )
+
+[node name="Person44" parent="." instance=ExtResource( 3 )]
+position = Vector2( 548, 921 )
+
+[node name="Person45" parent="." instance=ExtResource( 3 )]
+position = Vector2( 596, 921 )
+
+[node name="Person46" parent="." instance=ExtResource( 3 )]
+position = Vector2( 628, 921 )
+
+[node name="Person7" parent="." instance=ExtResource( 3 )]
+position = Vector2( 86, 925 )
+
+[node name="Person35" parent="." instance=ExtResource( 3 )]
+position = Vector2( -58, 916 )
+
+[node name="Person36" parent="." instance=ExtResource( 3 )]
+position = Vector2( -26, 916 )
+
+[node name="Person49" parent="." instance=ExtResource( 3 )]
+position = Vector2( 196, 921 )
+
+[node name="Person50" parent="." instance=ExtResource( 3 )]
+position = Vector2( 236, 921 )
+
+[node name="Person51" parent="." instance=ExtResource( 3 )]
+position = Vector2( 268, 921 )
+
+[node name="Person52" parent="." instance=ExtResource( 3 )]
+position = Vector2( 316, 921 )
+
+[node name="Person53" parent="." instance=ExtResource( 3 )]
+position = Vector2( 364, 921 )
+
+[node name="Person54" parent="." instance=ExtResource( 3 )]
+position = Vector2( 396, 921 )
+
+[node name="Person47" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1020, 921 )
+
+[node name="Person48" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1060, 921 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 752, 587 )
+zoom = Vector2( 1.5, 1.5 )
+
+[node name="debug_overlay_building" parent="." instance=ExtResource( 1 )]
+offset = Vector2( 0, 200 )
+transform = Transform2D( 1, 0, 0, 1, 0, 200 )
