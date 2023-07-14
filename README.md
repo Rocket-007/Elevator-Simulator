@@ -6,26 +6,40 @@ my simulation of a building elevator system
 <img src="https://github.com/Rocket-007/Elevator-Simulator/blob/main/github_page_files/elevator_ScreenShot2.png" alt="" width="50%"/>
 
 
+<br>
+<br>
+This project is to develop a model to simulate the behaviour of elevators in a multi-story building. By adjusting different  
 
+variables and running simulations, we could test different theories and scenarios and investigate the impact on passenger wait times.
 
-<img src="https://github.com/Rocket-007/Elevator-Simulator/blob/main/github_page_files/elevator_class_UML.png" alt="" width="50%"/>
+<br>
+
+<img src="https://github.com/Rocket-007/Elevator-Simulator/blob/main/github_page_files/elevator_class_UML.png" alt="" width="30%"/>
 <p><br></p>
 <p><br></p><p>In this UML class diagram, we have five classes: <b>Simulation</b>, <b>Building</b>, <b>Floor</b>, <b>Passenger</b>, and <b>Elevator</b>.
 </p>
 <p><b>Simulation Class: </b>The Simulation class handles the running of the building samples for analysis. It provides control keys such as:
 </p>
-<p>Controls:
-</p>
+<p><b>Controls</b>:</p>
 
-Arrows_keys = Pan Camera
-Z and X = Zoom Camera
-R = restart/reload running Simulation
-O = reload all
-Spacebar = pause/play Simulation 
-1 and 2 = slowdown/speedup Simulation time
-Tab = Hide/Show Building Simulation data monitor
-Shift = Hide/Show Elevator data monitor
-Ctrl = Hide/show Person data monitor
+Arrows_keys = Pan Camera  
+
+Z and X = Zoom Camera  
+
+R = restart/reload running Simulation  
+
+O = reload all  
+
+Spacebar = pause/play Simulation  
+
+1 and 2 = slowdown/speedup Simulation time  
+
+Tab = Hide/Show Building Simulation data monitor  
+
+Shift = Hide/Show Elevator data monitor  
+
+Ctrl = Hide/show Person data monitor  
+
 Alt = Hide/Show Person to Elevator line
 
 
