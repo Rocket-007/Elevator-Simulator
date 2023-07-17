@@ -5,7 +5,6 @@ my simulation of a building elevator system
 
 <img src="https://github.com/Rocket-007/Elevator-Simulator/blob/main/github_page_files/elevator_ScreenShot2.png" alt="" width="50%"/>
 
-
 <br>
 <br>
 This project is to develop a model to simulate the behaviour of elevators in a multi-story building. By adjusting different  
@@ -17,6 +16,7 @@ variables and running simulations, we could test different theories and scenario
 <br>
 <a href=""> Youtube Video </a>
 <br>
+<br>  
 
 <img src="https://github.com/Rocket-007/Elevator-Simulator/blob/main/github_page_files/elevator_class_UML.png" alt="" width="30%"/>
 <p><br></p>
