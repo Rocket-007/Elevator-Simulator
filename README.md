@@ -13,6 +13,8 @@ This project is to develop a model to simulate the behaviour of elevators in a m
 variables and running simulations, we could test different theories and scenarios and investigate the impact on passenger wait times.
 
 <br>
+<a href="https://rocket-007.itch.io/elevator-simulation"> Demo </a> <pre>        </pre> <a href=""> Youtube Video </a>
+<br>
 
 <img src="https://github.com/Rocket-007/Elevator-Simulator/blob/main/github_page_files/elevator_class_UML.png" alt="" width="30%"/>
 <p><br></p>
