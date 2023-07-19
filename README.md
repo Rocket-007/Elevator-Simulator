@@ -24,29 +24,19 @@ variables and running simulations, we could test different theories and scenario
 </p>
 <p><b>Simulation Class: </b>The Simulation class handles the running of the building samples for analysis. It provides control keys such as:
 </p>
-<p><b>Controls</b>:</p>
-
-Arrows_keys = Pan Camera  
-
-Z and X = Zoom Camera  
-
-R = restart/reload running Simulation  
-
-O = reload all  
-
-Spacebar = pause/play Simulation  
-
-1 and 2 = slowdown/speedup Simulation time  
-
-Tab = Hide/Show Building Simulation data monitor  
-
-Shift = Hide/Show Elevator data monitor  
-
-Ctrl = Hide/show Person data monitor  
-
-Alt = Hide/Show Person to Elevator line
-
-
+<b>Controls</b>:
+<br>
+Arrows_keys = Pan Camera<br>
+Z and X = Zoom Camera<br>
+R = restart/reload running Simulation<br>
+O = reload all<br>
+Spacebar = pause/play Simulation <br>
+1 and 2 = slowdown/speedup Simulation time<br>
+Tab = Hide/Show Building Simulation data monitor<br>
+Shift = Hide/Show Elevator data monitor<br>
+Ctrl = Hide/show Person data monitor<br>
+Alt = Hide/Show Person to Elevator line<br>
+<br>
 <p>The Simulation class contains methods like:
 </p>
 <p>Methods:
